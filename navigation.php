@@ -1,0 +1,93 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+<header>
+<nav class="nav-bar">
+  <div class="nav-left">
+    <a href="homepage.php" class="logo">
+      <img src="images/logo.png" alt="Лого">
+    </a>
+  </div>
+
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#">Полети</a>
+        <ul class="dropdown-menu">
+          <li><a href="departures.php">Заминаващи</a></li>
+          <li><a href="arrivals.php">Пристигащи</a></li>
+        </ul>
+      </li>
+      <li><a href="destination.php">Дестинации</a></li>
+      <li><a href="entertainments.php">Развлечения</a></li>
+      <li><a href="airlines.php">Авиокомпании</a></li>
+      <?php if (isset($_SESSION['user_id'])): ?>
+      <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+        <li><a href="admin.php">Админ</a></li>
+      <?php endif; ?>
+      <li><a href="profile.php">Профил</a></li>
+      <li><a href="logout.php">Изход</a></li>
+    <?php else: ?>
+      <li><a href="login.php">Вход</a></li>
+      <li><a href="registration.php">Регистрация</a></li>
+    <?php endif; ?>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<style>
+  header {
+    background: #004080;
+    padding: 20px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+  nav li {
+    position: relative;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+  }
+  nav li:hover > ul {
+    display: block;
+  }
+  nav ul ul {
+    display: none;
+    position: absolute;
+    background: #0066cc;
+    top: 40px;
+    left: 0;
+    min-width: 150px;
+    border-radius: 5px;
+  }
+  nav ul ul li {
+    width: 100%;
+  }
+  nav ul ul a {
+    padding: 10px;
+  }
+  nav ul ul a:hover {
+    background: #0055aa;
+  }
+</style>
