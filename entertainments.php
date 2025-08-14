@@ -27,85 +27,6 @@ if ($result && $result->num_rows > 0) {
   <meta charset="UTF-8">
   <title>Развлечения</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .destinations-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 40px 20px;
-    }
-
-    .destination-card {
-      width: 300px;
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .destination-card:hover {
-      transform: scale(1.03);
-    }
-
-    .destination-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .destination-content {
-      padding: 20px;
-      flex-grow: 1;
-    }
-
-    .destination-title {
-      font-size: 20px;
-      font-weight: bold;
-      color: #0d2d50;
-      margin-bottom: 10px;
-    }
-
-    .destination-button {
-      display: inline-block;
-      margin: 10px;
-      padding: 8px 16px;
-      color: white;
-      background-color: #2C6E49;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 14px;
-      border-radius: 8px;
-    }
-
-    .destination-button:hover {
-      background-color: #1B4332;
-    }
-
-    .category-buttons {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    p {
-      margin: 5px 0;
-      font-size: 14px;
-      color: #333;
-    }
-
-    strong {
-      color: #2c3e50;
-    }
-  </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
@@ -138,3 +59,4 @@ if ($result && $result->num_rows > 0) {
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
