@@ -65,42 +65,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta charset="UTF-8">
   <title>Регистрация</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .register-form {
-      max-width: 450px;
-      margin: 40px auto;
-      padding: 30px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .register-form h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #003366;
-    }
-    .register-form input {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .register-form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #2C7A4B;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .error-list {
-      color: red;
-      padding: 10px 0;
-    }
-  </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
@@ -147,3 +111,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
