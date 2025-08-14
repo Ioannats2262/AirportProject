@@ -50,27 +50,6 @@ $result = $conn->query($sql);
   <meta charset="UTF-8">
   <title>Заминаващи полети</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body { font-family: Arial, sans-serif; background: #eef3f7; margin: 0; padding: 0; }
-    h1 { text-align: center; padding: 20px; color: #003366; }
-    table { width: 90%; margin: 0 auto; border-collapse: collapse; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    th, td { padding: 12px; border: 1px solid #ccc; text-align: center; }
-    th { background-color: #004080; color: white; }
-    tr:nth-child(even) { background-color: #f2f2f2; }
-    .pagination { text-align: center; margin: 20px 0; }
-    .pagination a {
-      margin: 0 5px;
-      padding: 8px 12px;
-      background: #004080;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .pagination a.active {
-      background: #0073e6;
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
 
@@ -170,3 +149,4 @@ updateDateUI();
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
