@@ -82,46 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <meta charset="UTF-8">
   <title>Редакция на профил</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .edit-form {
-      max-width: 500px;
-      margin: 50px auto;
-      padding: 30px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .edit-form label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    .edit-form input {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .edit-form button {
-      margin-top: 20px;
-      width: 100%;
-      background-color: #2C7A4B;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .error {
-      color: red;
-      margin: 10px 0;
-    }
-    .success {
-      color: green;
-      margin: 10px 0;
-    }
-  </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
@@ -166,3 +126,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
