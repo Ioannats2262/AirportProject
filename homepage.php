@@ -4,57 +4,6 @@
   <meta charset="UTF-8">
   <title>Летище Варна</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-    }
-
-      .carousel-container {
-        position: relative;
-        width: 800px;
-        height: 400px;
-        margin: 40px auto;
-        overflow: hidden;
-        border-radius: 20px;
-        background: transparent;
-      }
-
-      .carousel-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        opacity: 0;
-        transition: opacity 1s ease;
-        background-color: transparent;
-      }
-
-      .carousel-image.active {
-        opacity: 1;
-        z-index: 1;
-      }
-
-    .content {
-      padding: 40px 20px;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-      color: #2c3e50;
-    }
-
-    .content h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-
-    .content p {
-      font-size: 18px;
-    }
-  </style>
 </head>
 <body>
   <?php include 'navigation.php'; ?>
@@ -100,3 +49,4 @@
 
 </body>
 </html>
+
