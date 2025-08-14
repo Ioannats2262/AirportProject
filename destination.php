@@ -11,64 +11,6 @@ $result = $conn->query($sql);
   <meta charset="UTF-8">
   <title>Дестинации</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .destination-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .destination-card {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-      padding-bottom: 20px;
-    }
-
-    .destination-card img.city {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .destination-card .flag {
-      width: 30px;
-      height: 20px;
-      vertical-align: middle;
-      margin-left: 5px;
-    }
-
-    .destination-card h3 {
-      margin: 15px 0 5px;
-      color: #003366;
-    }
-
-    .destination-card p {
-      padding: 0 15px;
-      font-size: 14px;
-      color: #333;
-    }
-
-    .destination-card button {
-      margin-top: 15px;
-      background-color: #2C7A4B;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .destination-card button:hover {
-      background-color: #1B4332;
-    }
-  </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
@@ -100,3 +42,4 @@ $result = $conn->query($sql);
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
