@@ -46,42 +46,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta charset="UTF-8">
   <title>Вход</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .login-form {
-      max-width: 400px;
-      margin: 40px auto;
-      padding: 30px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .login-form h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #003366;
-    }
-    .login-form input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .login-form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #2C7A4B;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .login-form ul {
-      color: red;
-      padding-left: 20px;
-    }
-  </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
@@ -111,3 +75,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
