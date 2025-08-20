@@ -116,24 +116,13 @@ if (isset($_GET['flight_id']) || isset($_POST['flight_id'])) {
     }
 }
 ?>
-
-<!-- HTML + JS част -->
+    
 <!DOCTYPE html>
 <html lang="bg">
 <head>
   <meta charset="UTF-8">
   <title>Купи билет</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .ticket-form { max-width: 800px; margin: 50px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .ticket-form h2 { text-align: center; color: #003366; }
-    .ticket-form input, select { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
-    .ticket-form button { margin-top: 20px; width: 100%; padding: 10px; background-color: #2C7A4B; color: white; border: none; border-radius: 6px; font-weight: bold; }
-    .ticket-form .seat-map { display: grid; grid-template-columns: repeat(6, 45px); gap: 5px; justify-content: center; margin-top: 10px; }
-    .seat { width: 40px; height: 40px; background-color: #eee; border: 1px solid #999; text-align: center; line-height: 40px; cursor: pointer; border-radius: 5px; }
-    .seat.selected { background-color: #2C7A4B; color: white; }
-    .seat.booked { background-color: #aaa; cursor: not-allowed; }
-  </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
@@ -291,3 +280,4 @@ window.addEventListener('DOMContentLoaded', () => {
 </script>
 </body>
 </html>
+
